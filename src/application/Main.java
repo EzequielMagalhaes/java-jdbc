@@ -1,12 +1,5 @@
 package application;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-
-import db.DB;
-
 public class Main {
 
 	public static void main(String[] args) {
@@ -14,6 +7,12 @@ public class Main {
 //		System.out.println("Conectado com sucesso!");
 //		DB.closeConnection(); // Fechou a conexão com o banco de dados.
 		
+		
+		
+							/* DEMO : RECUPERAR DADOS //
+		
+// São recursos externos, que não são controlados pela JVM, por isso é ideal que fechemos
+// esses recursos manualmente para evitar que haja vazamento de memória na aplicação.
 		Connection conn = null;
 		Statement st = null;
 		ResultSet rs = null;
@@ -30,5 +29,46 @@ public class Main {
 		catch(SQLException e) {
 			e.printStackTrace();
 		}
+		finally {			
+			DB.closeResultSet(rs);
+			DB.closeStatement(st);
+			DB.closeConnection();
+		}
+*/
+		
+		
+							// DEMO : INSERIR DADOS //
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+							// DEMO : ATUALIZAR DADOS //
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+							// DEMO : DELETAR DADOS //
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 }

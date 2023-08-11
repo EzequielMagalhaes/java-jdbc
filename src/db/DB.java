@@ -55,6 +55,7 @@ public class DB {
 		}	
 	}
 	
+	
 //	MÉTODO PARA FECHAR O STATEMENT //
 	public static void closeStatement(Statement st) {
 		if(st != null) {
@@ -65,6 +66,7 @@ public class DB {
 			}
 		}
 	}
+	
 	
 //	MÉTODO PARA FECHAR O RESULTSET //
 	public static void closeResultSet(ResultSet rs) {
